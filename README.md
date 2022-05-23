@@ -22,4 +22,12 @@ Per a això, has de dur a terme les següents tasques:
 
 3. Modificarem el component Escena per a mostrar totes les línies de text obtingudes del component pare App mitjançant props.
 
+
+## Exercici 3
+És moment d'aplicar estils al nostre component Escena. Has de maquetar aquest component utilitzant styled-components:
+
+## Exercici 4
+Mostrarem totes les línies de l’aplicació, però ressaltarem només una de cada vegada, que anirà canviant a mesura que premem els botons d’avançar o retrocedir:
+
+
 [cheat sheet](https://www.markdownguide.org/cheat-sheet/)

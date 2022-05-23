@@ -1,9 +1,10 @@
-import data from '../../data/data'
+// import data from '../../data/data'
 import './escena.css'
 
-const Escena = () => {
+
+const Escena = ({fraseIndex = 0, data}) => {
   const frases = data.map(frase => <p>{frase}</p>)
-  return <div>{frases}</div>
+  return <div>{frases[fraseIndex]}</div>
 }
 
 export default Escena
