@@ -19,7 +19,7 @@ function App() {
     <div className='App'>
       <Button onClick={handleClickPrevious} label='Anterior' />
       <Button onClick={handleClickNext} label='Siguiente' />
-      <Escena fraseIndex={index} data={data} />
+      <Escena phraseIndex={index} data={data} />
     </div>
   )
 }
