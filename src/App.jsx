@@ -16,13 +16,13 @@ const App = () => {
     setIndex( _ => (index < data.length - 1) ? index + 1 : setIndex(0))
   
 
-    if (intro === false) {
+    if (!intro) {
       return (
         <div className="intro">
           <p>Intro</p>
           <p>
             Este proyecto consiste en una web de gestión empresarial desarrollada con React,
-            que ha solicitado que desarrollem un tutorial, en el que mediante dos botones los
+            que ha solicitado que desarrollemos un tutorial, en el que mediante dos botones los
             nuevos usuarios puedan avanzar y retroceder en los consejos, modificando el texto
             de ayuda y la imagen de fondo.
           </p>
