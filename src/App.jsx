@@ -8,14 +8,12 @@ import Escena from './components/escena/Escena'
 function App() {
   const [index, setIndex] = useState(0)
 
-  const handleClickPrevious = () => setIndex( _ => (index < data.length) ? index + 1 : setIndex(0))
+  const handleClickPrevious = () => 
+    setIndex( _ => (index > 0) ? index - 1 : setIndex(data.length - 1))
 
-  const handleClickNext = () => {
-    console.log('next button clicked')
+  const handleClickNext = () => 
     setIndex( _ => (index < data.length - 1) ? index + 1 : setIndex(0))
-    // setIndex( _ => index + 1)
-
-  }
+  
 
   return (
     <div className='App'>
