@@ -1,8 +1,9 @@
+import data from '../../data/data'
 import './escena.css'
-const Escena = () => (
-    <p>
-        El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial
-    </p>
-)
+
+const Escena = () => {
+  const frases = data.map(frase => <p>{frase}</p>)
+  return <div>{frases}</div>
+}
 
 export default Escena
