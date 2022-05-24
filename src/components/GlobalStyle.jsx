@@ -15,8 +15,7 @@ const GlobalStyle = globalStyle`
              background == 1 ? bakgroundImage[background] :
              background == 2 ? bakgroundImage[background] :
              background == 3 ? bakgroundImage[background] :
-             background == 4 ? bakgroundImage[background] : null
-
+             background == 4 || bakgroundImage[background] 
             });
             background-repeat: no-repeat; 
             background-size: cover;

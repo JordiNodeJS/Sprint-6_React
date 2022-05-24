@@ -34,14 +34,14 @@ const App = () => {
       </div>
 
     ): (
-      <>
+      <div className='buttons'>
       
         <Button onClick={handleClickPrevious} label="Anterior" />
           <Button onClick={handleClickNext} label="Siguiente" />
          <Escena phraseIndex={index} data={data} />
     
        
-      </>
+      </div>
     )}
 
   </div>

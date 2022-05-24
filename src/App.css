@@ -1,6 +1,8 @@
 .App {
-  text-align: center;
   height: 100vh;
+  max-width: 500px;
+  margin: auto;
+  
 }
 
 
@@ -34,13 +36,20 @@
   }
 }
 
+.buttons {
+  text-align: center;
+}
+
 button {
   font-size: calc(10px + 2vmin);
 }
 .intro {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .intro > p {
   text-align: center;
+  display: flex;
+  flex-direction: row;
 }
