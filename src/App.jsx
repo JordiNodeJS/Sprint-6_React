@@ -16,29 +16,33 @@ const App = () => {
     setIndex( _ => (index < data.length - 1) ? index + 1 : setIndex(0))
   
 
-    if (!intro) {
-      return (
-        <div className="intro">
-          <p>Intro</p>
-          <p>
-            Este proyecto consiste en una web de gestión empresarial desarrollada con React,
-            que ha solicitado que desarrollemos un tutorial, en el que mediante dos botones los
-            nuevos usuarios puedan avanzar y retroceder en los consejos, modificando el texto
-            de ayuda y la imagen de fondo.
-          </p>
-          <Button onClick={() => setIntro(true)} label="Start" />
-        </div>
-      )
-    } else {
-      return (
-        <div className="App">
-          <Button onClick={handleClickPrevious} label="Anterior" />
+  return (
+  <div className="App">
+    { !intro ? (
+      <div className="intro">
+             <p>Intro</p>
+             <p>
+               Este proyecto consiste en una web de gestión empresarial desarrollada con React,
+               que ha solicitado que desarrollemos un tutorial, en el que mediante dos botones los
+               nuevos usuarios puedan avanzar y retroceder en los consejos, modificando el texto
+               de ayuda y la imagen de fondo.
+             </p>
+             <Button onClick={() => setIntro(true)} label="Start" />
+      </div>
+
+    ): (
+      <>
+      
+        <Button onClick={handleClickPrevious} label="Anterior" />
           <Button onClick={handleClickNext} label="Siguiente" />
-          <Escena phraseIndex={index} data={data} />
-        </div>
-      )
-    }
-  
+         <Escena phraseIndex={index} data={data} />
+       
+      </>
+    )}
+
+  </div>
+
+  )
 }
 
 export default App
