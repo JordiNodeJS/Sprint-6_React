@@ -29,5 +29,15 @@ Per a això, has de dur a terme les següents tasques:
 ## Exercici 4
 Mostrarem totes les línies de l’aplicació, però ressaltarem només una de cada vegada, que anirà canviant a mesura que premem els botons d’avançar o retrocedir:
 
+## Exercici 5
+Setting up styled components
+```
+npm install styled-components
+```
+
+[createGlobalStyle](https://styled-components.com/docs/api#createglobalstyle)
+
+### Background
+[tricks](https://css-tricks.com/apply-a-filter-to-a-background-image/)
 
 [cheat sheet](https://www.markdownguide.org/cheat-sheet/)

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import data from './data/data.js'
 
+// components
 import Button from './components/button/Button'
 import Escena from './components/escena/Escena'
 
@@ -17,7 +18,9 @@ const App = () => {
   
 
   return (
-  <div className="App">
+    <>
+ 
+    <div className="App">
     { !intro ? (
       <div className="intro">
              <p>Intro</p>
@@ -36,12 +39,13 @@ const App = () => {
         <Button onClick={handleClickPrevious} label="Anterior" />
           <Button onClick={handleClickNext} label="Siguiente" />
          <Escena phraseIndex={index} data={data} />
+    
        
       </>
     )}
 
   </div>
-
+  </>
   )
 }
 

@@ -1,4 +1,5 @@
 import './escena.css'
+import GlobalStyle from '../GlobalStyle'
 
 const Escena = ({phraseIndex = 0, data}) => {
   const phrases = data.map((phrase, i) => (
@@ -7,6 +8,7 @@ const Escena = ({phraseIndex = 0, data}) => {
   
   return (
    <>
+    <GlobalStyle background = {phraseIndex} />
     {phrases}
    </>
   )
